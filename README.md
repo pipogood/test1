@@ -4,7 +4,7 @@
 # Setup
   Create a new ROS2 workspace, pull relevant packages, install dependencies, compile, and source the workspace by using:
 ```
-cd (your workspace)
+cd (your workspace/src)
 git clone -b foxy https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver.git src/Universal_Robots_ROS2_Driver
 rosdep install --ignore-src --from-paths src -y -r
 colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release
@@ -17,7 +17,7 @@ ros2 launch ur_bringup ur_control.launch.py ur_type:=ur5e robot_ip:=yyy.yyy.yyy.
 ```
 2. Install ros2_controller for testing UR3e movement (more detail: https://github.com/ros-controls/ros2_control_demos/tree/foxy)
 ```
-cd (your workspace)
+cd (your workspace/src)
 git clone https://github.com/ros-controls/ros2_controllers
 rosdep install --from-paths src --ignore-src -r -y
 colcon build --symlink-install
