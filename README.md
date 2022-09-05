@@ -1,4 +1,4 @@
-# This repository for install UR3e launch package
+# Install UR3e launch package
   Reference & More Detail: https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/tree/foxy
 
 # Setup
